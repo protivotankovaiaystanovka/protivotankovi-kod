@@ -1,7 +1,11 @@
 @import url(../node_modules/normalize.css/normalize.css);
 @import "./variables.scss";
+// SHIFT + ALT + F
+h1 {
+  margin: 0;
+}
 
-#app{
+#app {
   width: 100%;
 
   @media (min-width: $desktop-width) {
@@ -9,23 +13,21 @@
   }
 }
 
-
-
-li{
+li {
   list-style: none;
 }
+
 .header {
   min-width: 300px;
   padding: 20px;
   background-color: white;
   display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    @media (min-width: $desktop-width){
-      display: none;
-    }
-    
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 
   &__navigation {
     display: flex;
@@ -33,7 +35,7 @@ li{
     justify-content: space-between;
     align-items: center;
     gap: 17px;
-    &--items--tablet{
+    &--items--tablet {
       display: none;
       @media (min-width: 768px) {
         display: flex;
@@ -68,24 +70,59 @@ li{
   min-width: 300px;
   height: 100%;
 }
-.main.h2{
-    margin-left: 20px;
+.main.h2 {
+  margin-left: 20px;
 }
 
-.aside__menu{
+.aside__menu {
   display: none;
   width: 320px;
   height: 100vh;
-  background-color: aqua;
-  @media (min-width: $desktop-width){
+  background-color: white;
+  justify-content: space-between;
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    &--header {
+      padding-left: 22px;
+      padding-right: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--list {
+      padding: 7px 21px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &--icon {
+      display: flex;
+      gap: 16px;
+      padding-left: 19px;
+    }
+    &--lang {
+      display: flex;
+      gap: 7px;
+      padding-left: 21px;
+      padding-top: 40px;
+    }
+    &--mail {
+      padding-left: 19px;
+      font-size: 16px;
+      font-weight: 500;
+      padding-top: 16px;
+    }
+    &--cifri {
+      padding-left: 19px;
+      padding-top: 12px;
+      font-weight: 700;
+      font-size: 24px;
+    }
   }
-
-
-
 }
-.main__section{
+.main__section {
   width: 100%;
-}  
+}
