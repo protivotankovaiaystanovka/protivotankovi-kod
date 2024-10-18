@@ -126,3 +126,16 @@ li {
 .main__section {
   width: 100%;
 }
+
+.menu{
+  display: none;
+}
+.menu_open{
+  display: flex;
+  width: 320px;
+  height: 100vh;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
