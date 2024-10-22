@@ -68,7 +68,7 @@ li {
   background-color: #f8f8f8;
   width: 100%;
   min-width: 300px;
-  height: 100%;
+  height: 100vhg;
 }
 .main.h2 {
   margin-left: 20px;
@@ -127,15 +127,83 @@ li {
   width: 100%;
 }
 
-.menu{
+.menu {
   display: none;
+  &--header {
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &--list {
+    padding: 7px 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &--icon {
+    display: flex;
+    gap: 16px;
+    padding-left: 19px;
+  }
+  &--lang {
+    display: flex;
+    gap: 7px;
+    padding-left: 21px;
+    padding-top: 40px;
+  }
+  &--mail {
+    padding-left: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 16px;
+  }
+  &--cifri {
+    padding-left: 19px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 24px;
+  }
 }
-.menu_open{
+.menu_open {
   display: flex;
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  left: 320px;
+  top: 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 320px;
   height: 100vh;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   left: 0;
+  box-shadow: 0px 0px 20px 17px rgba(34, 60, 80, 0.23);
+  z-index: 1;
+}
+.menu-white {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.96;
+  z-index: 0;
+}
+.polosa{
+  width: 100%;
+  height: 1px;
+  background-color: #d9fff5;
 }
