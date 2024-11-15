@@ -1,15 +1,16 @@
 @import url(../node_modules/normalize.css/normalize.css);
 @import "./variables.scss";
 @import "/fonts/stylesheet.css";
-@import "./swiper.scss"; // SHIFT + ALT + F
-  
+@import "./swiper.scss";
+@import "./slider.scss"; // SHIFT + ALT + F
+
 h1 {
   margin: 0;
 }
 
 #app {
   width: 100%;
-  font-family: 'TT Lakes';
+  font-family: "TT Lakes";
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -211,55 +212,68 @@ li {
   height: 1px;
   background-color: #d9fff5;
 }
-.title{
+.title {
   display: flex;
   gap: 14px;
   padding-top: 24px;
 }
-.divider{
+.divider {
   width: 4px;
   height: 36px;
   background-color: #41f6d7;
   border-radius: 50%;
 }
 
-.subtitle{
+.subtitle {
   padding: 0px 16px 24px;
   color: $text-color;
   font-size: 14px;
-  &_desktop{
+  &_desktop {
     display: none;
-    @media(min-width: $desktop-width){
+    @media (min-width: $desktop-width) {
       display: flex;
     }
   }
   &_tablet {
     display: none;
-    @media(min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       display: flex;
     }
-    @media(min-width: $desktop-width){
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }
-  &_container{
-    @media(min-width: $tablet-width){
+  &_container {
+    @media (min-width: $tablet-width) {
       display: flex;
       padding-right: 16px;
       gap: 48px;
     }
   }
-  &_readmore{
+  &_readmore {
     font-size: 16px;
     font-weight: 500;
     display: flex;
     gap: 8px;
     align-items: center;
-    padding: 0px 16px 16px; 
+    padding: 0px 16px 16px;
   }
 }
 
-.karova{
+.karova {
   width: 100%;
   height: 176px;
+}
+
+.polosa2{
+  margin: 51px;
+}
+
+.korobka{
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  color: #7e7e82;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
